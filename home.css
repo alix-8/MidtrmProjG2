@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Poppins;
+    height: 100vh;
+}
+
+main {
+    align-content: center;
+    flex-grow: 1;
+}
