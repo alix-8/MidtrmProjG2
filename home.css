@@ -1,17 +1,108 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Poppins;
 }
 
 body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-family: Poppins;
-    height: 100vh;
+    height: 100%;
+    background-color: #482C3F;
+}
+
+header, footer {
+    background-color: #482C3F;
+    min-height: 10vh;
+    align-content: center;
+}
+
+.logo {
+    color: #F5A385;
+}
+
+nav {
+    background-color: #FAF0EA;
+    min-height: 6vh;
+    align-content: center;
+    display: flex;
+    padding-top: 4px;
+}
+
+nav a {
+    flex-grow: 1;
+    align-content: center;
+    color: #482C3F;
+    text-decoration: none;
+}
+
+.nav_home {
+    background-color: #482C3F;
+    color: #E2D6C3;
 }
 
 main {
     align-content: center;
+    height: 82vh;
+    color: #E2D6C3;
+    background: linear-gradient(to bottom, #482C3F 20%, #7B5164 55% 56%, #496C82 80%, #AAB5BB 94%, #FAF0EA);
+}
+
+.cards {
+    padding-bottom: 10vh;
+    background-color: #FAF0EA;
+}
+
+.resources_card, 
+.tools_card, 
+.hub_card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.resources_card div,
+.tools_card div,
+.hub_card div {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
+    text-align: start;
+}
+
+.resources_card div h1,
+.tools_card div h1,
+.hub_card div h1 {
+    color: #FAF0EA;
+}
+
+.resources_card div p,
+.tools_card div p,
+.hub_card div p {
+    color: #e2d6c3;
+}
+
+.resources_card button,
+.tools_card button,
+.hub_card button {
+    padding: 16px;
+    border-radius: 16px;
+    background-color: #FAF0EA;
+}
+
+.resources_card {
+    background-color: #496C82;
+}
+
+.tools_card {
+    background-color: #7B5163;
+}
+
+.hub_card {
+    background-color: #482C3F;
 }
