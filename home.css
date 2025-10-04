@@ -5,14 +5,25 @@
 
 main {
     align-content: center;
-    height: 82vh;
+    height: 80vh;
     color: #E2D6C3;
-    background: linear-gradient(to bottom, #482C3F 20%, #7B5164 55% 56%, #496C82 80%, #AAB5BB 94%, #FAF0EA);
+    background: linear-gradient(to bottom, #482C3F 20%, #7B5164 55% 56%, #496C82 80%, #AAB5BB 94%, #e2d6c3);
+}
+
+/* We have spaces for */
+.introcards{
+    padding-top: 20vh;
+    color: #496C82;
+    background-color: #e2d6c3;
+    font-size: 25px;
+    padding-bottom: 40px;
 }
 
 .cards {
+    flex-direction: row;
     padding-bottom: 10vh;
-    background-color: #FAF0EA;
+    background-color: #e2d6c3;
+    height: 60vh;
 }
 
 .resources_card, 
@@ -24,7 +35,8 @@ main {
     justify-content: center;
     margin: 8px;
     padding: 16px;
-    border-radius: 16px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .resources_card div,
@@ -32,6 +44,7 @@ main {
 .hub_card div {
     display: flex;
     flex-direction: column;
+    padding-left: 10px;
     flex-grow: 1;
     text-align: start;
 }
@@ -40,6 +53,7 @@ main {
 .tools_card div h1,
 .hub_card div h1 {
     color: #FAF0EA;
+    font-size: 25px;
 }
 
 .resources_card div p,
@@ -48,12 +62,19 @@ main {
     color: #e2d6c3;
 }
 
-.resources_card button,
-.tools_card button,
-.hub_card button {
-    padding: 16px;
-    border-radius: 16px;
-    background-color: #FAF0EA;
+.card_button {
+    font-size: 15px;
+    padding: 8px 16px;
+    border-radius: 25px;
+    color: black;
+    background-color: #fff8f3b6;
+    text-decoration: none;
+}
+
+.card_button:hover {
+    padding: 8px 16px;
+    border-radius: 25px;
+    background-color: #908b8ab6;
 }
 
 .resources_card {
@@ -66,4 +87,32 @@ main {
 
 .hub_card {
     background-color: #482C3F;
+}
+
+@media (min-width: 601px) {
+
+    /* We have spaces for */
+    .introcards{
+        padding-top: 10vh;
+    }
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        gap: 10px;
+        height: 30vh;
+    }
+
+    .resources_card, 
+    .tools_card, 
+    .hub_card {
+        flex: 1;
+        max-width: 300px;
+        flex-direction: column;
+    }
+
+    .card_button {
+        margin-bottom: 10px;
+    }
 }
