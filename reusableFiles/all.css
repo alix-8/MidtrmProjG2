@@ -14,7 +14,7 @@ body {
 
 header, footer {
     background-color: #482C3F;
-    min-height: 10vh;
+    min-height: 5vh;
     align-content: center;
 }
 
@@ -27,7 +27,7 @@ nav {
     min-height: 6vh;
     align-content: center;
     display: flex;
-    padding-top: 4px;
+    padding-top: 2px;
 }
 
 nav a {

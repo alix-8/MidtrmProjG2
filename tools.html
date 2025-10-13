@@ -1,94 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Study Hub — Tools & Resources</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySpace</title>
+    <link rel="stylesheet" href="cssFiles/tools.css">
+    <link rel="stylesheet" href="reusableFiles/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Study Hub</h1>
-    <p>A website for students to share study tips, schedules, and resources for the Web App Course.</p>
+    <header>
+        <h1 class="logo">&lt;S&gt;</h1>
+    </header>
     <nav>
-      <ul>
-        <li><a href="#concept">Concept</a></li>
-        <li><a href="#tools">Tools</a></li>
-        <li><a href="#categories">Categories</a></li>
-        <li><a href="#example-schedule">Example Schedule</a></li>
-      </ul>
+        <a href="home.html" class="nav_home">Home</a>
+        <a href="resources.html" class="nav_resources">Resources</a>
+        <a href="tools.html" class="nav_tools">Tools</a>
+        <a href="hub.html" class="nav_hub">Hub</a>
     </nav>
-  </header>
+    <main>
+        <section class="about">
+            <h1>Tools</h1>
+            <p>Space of compiled free online tool apps to code, design, and study <b>Web Development</b> smarter.</p>
+        </section>
 
-  <main>
-    <section id="concept">
-      <h2>Concept</h2>
-      <p>
-        <strong>Study Hub</strong> is a community-driven site where students in the Web App Course
-        can share study tips, post their weekly schedules, and collect useful tools and resources.
-        The goal is to help learners discover the right tools for coding, design, and assets so they
-        can build better projects and study more efficiently.
-      </p>
-    </section>
+        <section class="cards">
+            <div class="ides_card">
+                <div class="ides_card_header">
+                    <div>
+                        <h1>Online IDEs</h1>
+                        <p>Write, run and share code instantly!</p>
+                    </div>
+                    <img class="ides_card_drop_image" src="assets/dropdown.svg" alt="dropdown icon" width="40px">
+                </div>
+                <div class="ides_card_body">
+                <ul>
+                    <li><a href="#">Kahit ano</a></li>
+                    <li><a href="#">Kahit ano</a></li>
+                    <li><a href="#">Kahit ano</a></li>
+                    <li><a href="#">Kahit ano</a></li>
+                    <li><a href="#">Kahit ano</a></li>
+                </ul>
+                </div>
+            </div>
 
-    <section id="tools">
-      <h2>Tools (organized by category)</h2>
-      <p>Below is a compilation of tools categorized by their primary use — IDEs, design, and assets.</p>
+            <div class="design_card">
+                <div class="design_card_header">
+                    <div>
+                        <h1>Design</h1>
+                        <p>Design and create diagrams and visuals!</p>
+                    </div>
+                    <img class="design_card_drop_image" src="assets/dropdown.svg" alt="dropdown icon" width="40px">
+                </div>
+                <div class="design_card_body">
+                <ul>
+                    <li><a href="#">Kahit ano</a></li>
+                    <li><a href="#">Kahit ano</a></li>
+                    <li><a href="#">Kahit ano</a></li>
+                    <li><a href="#">Kahit ano</a></li>
+                    <li><a href="#">Kahit ano</a></li>
+                </ul>
+                </div>
+            </div>
 
-      <article id="online-ides">
-        <h3>Online IDEs</h3>
-        <ul>
-          <li><a href="https://replit.com/~" target="_blank" rel="noopener">Replit</a> — collaborative online IDE for many languages.</li>
-          <li><a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a> — front-end playground for HTML, CSS, and JS.</li>
-          <li><a href="https://jsfiddle.net/" target="_blank" rel="noopener">JS Fiddle</a> — quick JavaScript/HTML/CSS prototyping.</li>
-        </ul>
-      </article>
-
-      <article id="design">
-        <h3>Design</h3>
-        <ul>
-          <li><a href="https://www.drawio.com/" target="_blank" rel="noopener">Draw.io</a> — diagrams and flowcharts.</li>
-          <li><a href="https://cssgridgenerator.io/" target="_blank" rel="noopener">CSS Grid Generator</a> — visually create CSS grid layouts.</li>
-          <li><a href="https://coolors.co/" target="_blank" rel="noopener">Palette Generator (Coolors)</a> — quickly generate color palettes.</li>
-          <li><a href="https://fonts.google.com/" target="_blank" rel="noopener">Google Fonts</a> — free web fonts library.</li>
-          <li><a href="https://whimsical.com/wireframes" target="_blank" rel="noopener">Wireframing (Whimsical)</a> — fast wireframing and flow diagrams.</li>
-        </ul>
-      </article>
-
-      <article id="icons-assets">
-        <h3>Icons & Assets</h3>
-        <ul>
-          <li><a href="https://unsplash.com/" target="_blank" rel="noopener">HD Images (Unsplash)</a> — free high-resolution photos.</li>
-          <li><a href="https://www.flaticon.com/" target="_blank" rel="noopener">Icons (Flaticon)</a> — large collection of icons and vectors.</li>
-        </ul>
-      </article>
-    </section>
-
-    <section id="categories">
-      <h2>Categories For Tools (quick overview)</h2>
-      <ul>
-        <li><strong>Online IDEs:</strong> Replit, CodePen, JS Fiddle</li>
-        <li><strong>Design:</strong> Draw.io, CSS Grid Generator, Palette Generator, Google Fonts, Wireframing</li>
-        <li><strong>Icons & Assets:</strong> Unsplash, Flaticon</li>
-      </ul>
-    </section>
-
-    <section id="example-schedule">
-      <h2>Example Weekly Study Schedule (suggested)</h2>
-      <ol>
-        <li>Monday — Review lecture notes; practice HTML/CSS basics (1.5 hrs)</li>
-        <li>Tuesday — Work on lab exercises; try an online IDE (2 hrs)</li>
-        <li>Wednesday — Study JavaScript concepts; small exercises (1.5 hrs)</li>
-        <li>Thursday — Design session: wireframing & palettes (1 hr)</li>
-        <li>Friday — Group study / code review (2 hrs)</li>
-        <li>Saturday — Project work / asset gathering (3 hrs)</li>
-        <li>Sunday — Rest, light reading, plan next week (30–60 mins)</li>
-      </ol>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; Study Hub — Resources for the Web App Course</p>
-  </footer>
+            <div class="icons_card">
+                <div class="icons_card_header">
+                    <div>
+                        <h1>Icons & Assets</h1>
+                        <p>Browse get-ready-to-use mats!</p>
+                    </div>
+                    <img class="icons_card_drop_image" src="assets/dropdown.svg" alt="dropdown icon" width="40px">
+                </div>
+                <div class="icons_card_body">
+                <ul>
+                    <li><a href="#">Kahit ano</a></li>
+                    <li><a href="#">Kahit ano</a></li>
+                    <li><a href="#">Kahit ano</a></li>
+                    <li><a href="#">Kahit ano</a></li>
+                    <li><a href="#">Kahit ano</a></li>
+                </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+<script src="jsFiles/tools.js"></script>
 </body>
+
 </html>
-       

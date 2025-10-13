@@ -6,13 +6,25 @@
 .about {
     color: #e2d6c3;
     padding: 40px;
+    padding-bottom: 60px;
+    background: linear-gradient(to bottom, #482C3F, #496C82, #E2D6C3);
+
 }
 
 .cards {
     display: flex;
     flex-direction: column;
-    padding-bottom: 10vh;
+    padding-bottom: 20vh;
     background-color: #e2d6c3;
+}
+
+a {
+    text-decoration: none;
+    color: #FAF0EA;
+}
+
+li:hover {
+    background-color: #496C82;
 }
 
 .html_card,
@@ -20,10 +32,18 @@
 .js_card {
     align-items: center;
     justify-content: center;
-    margin: 40px;
-
+    margin: 10px;
     border-radius: 20px;
     background-color: #8A999E;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.html_card:hover,
+.css_card:hover,
+.js_card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .html_card_header,
@@ -33,7 +53,7 @@
     flex-direction: row;
     padding: 16px;
 
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
     background-color: #496C82;;
 }
 
@@ -59,6 +79,21 @@
     color: #e2d6c3;
 }
 
+.html_card_body, 
+.css_card_body, 
+.js_card_body {
+    display: none;
+    background: none;
+    padding: 0;
+}
+
+.html_card_body.active, 
+.css_card_body.active, 
+.js_card_body.active  {
+    display: block;
+}
+
+
 .html_card_body ul,
 .css_card_body ul,
 .js_card_body ul {
@@ -74,7 +109,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: stretch;
+        align-items: flex-start;
         gap: 10px;
     }
 

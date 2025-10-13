@@ -1,0 +1,123 @@
+.nav_tools {
+    background-color: #482C3F;
+    color: #E2D6C3;
+}
+
+.about {
+    color: #e2d6c3;
+    padding: 40px;
+    padding-bottom: 60px;
+    background: linear-gradient(to bottom, #482C3F, #96747c, #E2D6C3);
+
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20vh;
+    background-color: #e2d6c3;
+}
+
+a {
+    text-decoration: none;
+    color: #FAF0EA;
+}
+
+li:hover {
+    background-color: #7b5163;
+}
+
+.ides_card,
+.design_card,
+.icons_card {
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #96747c;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ides_card:hover,
+.design_card:hover,
+.icons_card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ides_card_header,
+.design_card_header,
+.icons_card_header {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+
+    border-radius: 20px;
+    background-color: #7b5163;
+}
+
+.ides_card_header div,
+.design_card_header div,
+.icons_card_header div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: start;
+}
+
+.ides_card_header div h1,
+.design_card_header div h1,
+.icons_card_header div h1 {
+    color: #FAF0EA;
+    font-size: 25px;
+}
+
+.ides_card_header div p,
+.design_card_header div p,
+.icons_card_header div p {
+    color: #e2d6c3;
+}
+
+.ides_card_body, 
+.design_card_body, 
+.icons_card_body {
+    display: none;
+    background: none;
+    padding: 0;
+}
+
+.ides_card_body.active, 
+.design_card_body.active, 
+.icons_card_body.active  {
+    display: block;
+}
+
+
+.ides_card_body ul,
+.design_card_body ul,
+.icons_card_body ul {
+    list-style-type: none;
+    color: #e2d6c3;
+    text-align: start;
+    padding: 8px;
+}
+
+@media (min-width: 601px) {
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .ides_card,
+    .design_card,
+    .icons_card {
+        flex: 1;
+        max-width: 300px;
+        flex-direction: column;
+    }
+}
