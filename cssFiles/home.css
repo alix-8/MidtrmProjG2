@@ -10,10 +10,6 @@ main {
     background: linear-gradient(to bottom, #482C3F 20%, #7B5164 55% 56%, #496C82 80%, #AAB5BB 94%, #e2d6c3);
 }
 
-.logo, .webdev {
-    color: #F5A385;
-}
-
 /* Hello, student! phrase */
 main section p {
     display: inline-block;
@@ -24,12 +20,6 @@ main section p {
     border-radius: 20px;
     font-size: 15px;
 } 
-
-main .studyspace{
-    font-size: 50px;
-}
-
-
 
 /* We have spaces for */
 .introcards{
