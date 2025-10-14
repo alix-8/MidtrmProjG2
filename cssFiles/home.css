@@ -81,21 +81,6 @@ main section p {
     color: #e2d6c3;
 }
 
-.card_button {
-    font-size: 15px;
-    padding: 8px 16px;
-    border-radius: 25px;
-    color: black;
-    background-color: #fff8f3b6;
-    text-decoration: none;
-}
-
-.card_button:hover {
-    padding: 8px 16px;
-    border-radius: 25px;
-    background-color: #908b8ab6;
-}
-
 .resources_card {
     background-color: #496C82;
 }
