@@ -125,10 +125,11 @@ img {
         flex: 1;
         max-width: 250px;
         flex-direction: column;
+        padding: 30px;
         align-items: start;
     }
 
-    .card_button {
-        margin-bottom: 10px;
+    button {
+        margin-bottom: 40px;
     }
 }

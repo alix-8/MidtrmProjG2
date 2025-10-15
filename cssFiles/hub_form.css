@@ -31,6 +31,10 @@ input[required]{
     border-left: 4px solid #482C3F;
 }
 
+.optional {
+    color: #917b89;
+}
+
 button {
     margin-top: 14px;
     border: none;

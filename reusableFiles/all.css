@@ -29,12 +29,6 @@ body {
     padding: 5px 10px;
 }
 
-.footer_logo {
-    color: #FAF0EA;
-    margin-top: 10px;
-    padding: 5px 10px;
-}
-
 nav {
     background-color: #FAF0EA;
 
@@ -49,4 +43,15 @@ nav a {
     align-content: center;
     color: #482C3F;
     text-decoration: none;
+}
+
+
+footer {
+    color: #FAF0EA;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+
+.footer_logo {
+    margin-bottom: 20px;
 }
