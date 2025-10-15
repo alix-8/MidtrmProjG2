@@ -1,0 +1,58 @@
+legend {
+    padding-bottom: 20px;
+}
+
+label, .radio_label{
+    color: #482C3F;
+    align-items: flex-start;
+}
+
+input, select, textarea{
+    padding:5px;
+    width: 100%;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #482C3F;
+    transform: translateY(-3px);
+
+} 
+
+input[type="radio"]{
+    width: auto;
+    margin-right: 5px;
+}
+
+input[type="radio"] {
+  accent-color: #482C3F;
+}
+
+
+input[required]{
+    border-left: 4px solid #482C3F;
+}
+
+button {
+    margin-top: 14px;
+    border: none;
+    cursor: pointer;
+    color: #555555;
+}
+
+button[type="submit"] {
+    background: #482C3F;
+    color: #ffffff;
+}
+
+button[type="submit"]:hover {
+    background: #865b79;
+    color: #ffffff;
+}
+
+button[type="reset"]:hover {
+    background: #808080;
+    color: #333333;
+}

@@ -19,11 +19,13 @@
 }
 
 a {
+    margin-left: 5px;
     text-decoration: none;
-    color: #FAF0EA;
+    color: #f7f7f7;
 }
 
 li:hover {
+    border-radius: 5px;
     background-color: #7b5163;
 }
 
@@ -101,6 +103,19 @@ li:hover {
     color: #e2d6c3;
     text-align: start;
     padding: 8px;
+}
+
+.more_in_hub a{
+    color: #482C3F;
+}
+
+.more_in_hub{
+    background-color: #e2d6c3cf;
+    border-radius: 5px;
+}
+
+.more_in_hub:hover{
+    background-color: #ffffff;
 }
 
 @media (min-width: 601px) {

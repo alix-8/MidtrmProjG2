@@ -14,6 +14,7 @@ body{
 }
 
 .line1, legend {
+    margin-top: 5px;
     font-size: 20px;
     color: #482C3F;
 }
@@ -27,8 +28,6 @@ main{
 }
 
 .intro_msg, #benefits, .form_card {
-    align-items: center;
-    justify-content: center;
     flex: 1;
     max-width: 500px;
     border-radius: 20px;
@@ -38,6 +37,19 @@ main{
     background-color: #E2D6C380;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.form_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+}
+
 
 .intro_buttons {
     display: flex;
@@ -50,16 +62,21 @@ main{
     margin: 5px;
 }
 
-.benefit1_card, .benefit2_card, .benefit3_card {
+/* cards sa benefits */
+.individual_card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 5px 10px;
     padding: 25px;
     border-radius: 20px;
     background-color: #482C3F;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {
+    margin: 10px;
 }
 
 .cards h3 {
@@ -82,5 +99,17 @@ main{
     .intro_buttons {
         flex-direction: row;
         justify-content: center;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-wrap: wrap;
+        padding: 5px 30px;
+    }
+
+    .individual_card {
+        width: 250px;
+        height: 250px;
     }
 }

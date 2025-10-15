@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudySpace</title>
     <link rel="stylesheet" href="cssFiles/hub.css">
+    <link rel="stylesheet" href="cssFiles/hub_form.css">
     <link rel="stylesheet" href="reusableFiles/all.css">
     <link rel="stylesheet" href="reusableFiles/slogan.css">
         <link rel="stylesheet" href="reusableFiles/buttons.css">
@@ -39,17 +40,25 @@
         <section id="benefits">
             <p class="line1"><strong>Join now to enjoy these benefits!</strong></p>
             <div class="cards">
-                <div class="benefit1_card">
+                <div class="individual_card">
+                    <img class="benefits_image" src="assets/users-alt.png" alt="Community icon" width="100px">
                     <h3>Community Support</h3>
                     <p>Get help, feedback, and motivation from fellow students and developers in the hub.</p>
                 </div>
-                <div class="benefit2_card">
+                <div class="individual_card">
+                    <img class="benefits_image" src="assets/key.png" alt="Key icon" width="100px">
                     <h3>Learning Resources</h3>
                     <p>Access curated tutorials, tools, and tips shared by other members.</p>
                 </div>
-                <div class="benefit3_card">
+                <div class="individual_card">
+                    <img class="benefits_image" src="assets/arrow-trend-up.png" alt="Trend Up icon" width="100px">
                     <h3>Updates</h3>
                     <p>Know what's trending right now and what lessons are top viewed.</p>
+                </div>
+                <div class="individual_card">
+                    <img class="benefits_image" src="assets/share.png" alt="Share icon" width="100px">
+                    <h3>Share Your Knowledge</h3>
+                    <p>You can also share and upload resources to the community.</p>
                 </div>
             </div>
         </section>
@@ -58,10 +67,10 @@
         <div class="form_card">
             <form action="./submitted.html" method="post">
                 <legend>
-                    <p><strong>Join by filling out the form below!</strong></p>
+                    <p><strong>Join by filling out this form!</strong></p>
                 </legend>
 
-                <label for="name">Name:</label></br>
+                <b><label for="name">Name</label></br></b>
                 <input 
                     id="name"
                     name="name"
@@ -70,7 +79,7 @@
                     required
                 /> <br/><br/>
 
-                <label for="email">Email Address:</label></br>
+                <b><label for="email">Email Address</label></br></b>
                 <input 
                     id="email"
                     name="email"
@@ -80,15 +89,18 @@
                 />  <br/><br/>
 
                 <!-- Radio Button -->
-                <p>Your role:</p>
+                <b><p class="radio_label">Your role</p></b>
                 <input type="radio" id="student" name="role" value="Student" required/>
                 <label for="student">Student</label>
                 <br/>
                 <input type="radio" id="dev" name="role" value="Developer"/>
                 <label for="dev">Developer</label>
                 <br/>
+                <input type="radio" id="hobby" name="role" value="Self-Learning" required/>
+                <label for="Self-Learning">Self-Learning(Hobby)</label>
+                <br/>
 
-                <label for="name">Academic Info <span>(Optional)</span></label></br>
+                <b><label for="name">Academic Info <span>(Optional)</span></label></b></br>
                 <input 
                     id="school"
                     name="school"
@@ -102,7 +114,7 @@
                     placeholder="Course - Year"
                 /> <br/><br/>
 
-                <label for="comments">Reason of Joining</label><br/>
+                <b><label for="comments">Reason of Joining</label></b><br/>
                 <textarea
                     name="reason"
                     id="reason"

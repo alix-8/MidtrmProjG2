@@ -1,4 +1,4 @@
-.button {
+.button, button {
     display: inline-block;
     font-size: 15px;
     padding: 8px 16px;
@@ -6,11 +6,12 @@
     color: black;
     background-color: #fff8f3b6;
     text-decoration: none;
+    cursor: pointer;
 }
 
 
-.button:hover {
+.button:hover, button:hover {
     padding: 8px 16px;
     border-radius: 25px;
-    background-color: #908b8ab6;
+    background-color: #f9f6f4f3;
 }

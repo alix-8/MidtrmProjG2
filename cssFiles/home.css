@@ -63,6 +63,7 @@ main section p {
 .hub_card div {
     display: flex;
     flex-direction: column;
+    padding: 5px;
     padding-left: 10px;
     flex-grow: 1;
     text-align: start;
@@ -93,6 +94,15 @@ main section p {
     background-color: #482C3F;
 }
 
+button{
+    margin-top: 10px;
+}
+
+img {
+    margin-left: 10px;
+    width: 50px;
+}
+
 @media (min-width: 601px) {
 
     /* We have spaces for */
@@ -105,15 +115,16 @@ main section p {
         justify-content: center;
         align-items: stretch;
         gap: 10px;
-        height: 30vh;
+        height: 40vh;
     }
 
     .resources_card, 
     .tools_card, 
     .hub_card {
         flex: 1;
-        max-width: 300px;
+        max-width: 250px;
         flex-direction: column;
+        align-items: start;
     }
 
     .card_button {
