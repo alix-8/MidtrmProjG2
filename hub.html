@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudySpace</title>
     <link rel="stylesheet" href="cssFiles/hub.css">
+    <link rel="stylesheet" href="cssFiles/hub_form.css">
     <link rel="stylesheet" href="reusableFiles/all.css">
     <link rel="stylesheet" href="reusableFiles/slogan.css">
+        <link rel="stylesheet" href="reusableFiles/buttons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-         <header>
+    <header>
         <h1 class="logo">&lt;S&gt;</h1>
     </header>
     <nav>
@@ -31,31 +32,101 @@
         <section class="intro_msg">
             <p class="line1"><strong>Have a space in our StudySpace community! </strong></p>
             <p>Share your study tips, connect with fellow learners, and exchange ideas to make learning easier and more fun.</p>
-            <div class="buttons">
-                <button>See Benefits</button>
-                <button>Join Now</button>
+            <div class="intro_buttons">
+                <a href="#benefits" class="button">See Benefits</a>
+                <a href="#join_form" class="button">Join Now</a>
             </div>
         </section>
-        <section class="benefits">
+        <section id="benefits">
             <p class="line1"><strong>Join now to enjoy these benefits!</strong></p>
             <div class="cards">
-                <div class="benefit1_card">
-                    <h1>Community Support</h1>
-                    <p>Get help, feedback, and motivation from fellow students and developers in the hub</p>
+                <div class="individual_card">
+                    <img class="benefits_image" src="assets/users-alt.png" alt="Community icon" width="100px">
+                    <h3>Community Support</h3>
+                    <p>Get help, feedback, and motivation from fellow students and developers in the hub.</p>
                 </div>
-                <div class="benefit2_card">
-                    <h1>Learning Resources</h1>
+                <div class="individual_card">
+                    <img class="benefits_image" src="assets/key.png" alt="Key icon" width="100px">
+                    <h3>Learning Resources</h3>
                     <p>Access curated tutorials, tools, and tips shared by other members.</p>
                 </div>
-                <div class="benefit3_card">
-                    <h1>Updates</h1>
+                <div class="individual_card">
+                    <img class="benefits_image" src="assets/arrow-trend-up.png" alt="Trend Up icon" width="100px">
+                    <h3>Updates</h3>
                     <p>Know what's trending right now and what lessons are top viewed.</p>
                 </div>
+                <div class="individual_card">
+                    <img class="benefits_image" src="assets/share.png" alt="Share icon" width="100px">
+                    <h3>Share Your Knowledge</h3>
+                    <p>You can also share and upload resources to the community.</p>
+                </div>
             </div>
-                
         </section>
-        <p><strong>Join by filling out the form below.</strong></p>
     </main>
+    <section id="join_form">
+        <div class="form_card">
+            <form action="./submitted.html" method="post">
+                <legend>
+                    <p><strong>Join by filling out this form!</strong></p>
+                </legend>
+
+                <b><label for="name">Name</label></br></b>
+                <input 
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder=" Last name, First name, Middle Initial"
+                    required
+                /> <br/><br/>
+
+                <b><label for="email">Email Address</label></br></b>
+                <input 
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="email@example.com"
+                    required
+                />  <br/><br/>
+
+                <!-- Radio Button -->
+                <b><p class="radio_label">Your role</p></b>
+                <input type="radio" id="student" name="role" value="Student" required/>
+                <label for="student">Student</label>
+                <br/>
+                <input type="radio" id="dev" name="role" value="Developer"/>
+                <label for="dev">Developer</label>
+                <br/>
+                <input type="radio" id="hobby" name="role" value="Self-Learning" required/>
+                <label for="Self-Learning">Self-Learning(Hobby)</label>
+                <br/>
+
+                <b><label for="name">Academic Info <span>(Optional)</span></label></b></br>
+                <input 
+                    id="school"
+                    name="school"
+                    type="text"
+                    placeholder="School"
+                /> <br/>
+                <input 
+                    id="course_year"
+                    name="course_year"
+                    type="text"
+                    placeholder="Course - Year"
+                /> <br/><br/>
+
+                <b><label for="comments">Reason of Joining</label></b><br/>
+                <textarea
+                    name="reason"
+                    id="reason"
+                    rows="4"
+                    placeholder="Tell us why you want to join..."
+                ></textarea>
+                <br/><br/>
+                <button type="submit">Register</button>
+                <button type="reset">Clear Form</button>
+            </form>
+        </div>
+    </section>
     <footer>
 
     </footer>

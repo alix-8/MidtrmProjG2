@@ -3,26 +3,33 @@
     color: #E2D6C3;
 }
 
+body{
+       background: linear-gradient(to bottom, #482C3F 20%, #7B5164 55% 56%, #496C82 80%, #AAB5BB 94%, #e2d6c3);
+}
+
 .about{
     color: #e2d6c3;
     padding: 40px;
     padding-bottom: 20px;
 }
 
-.line1 {
+.line1, legend {
+    margin-top: 5px;
     font-size: 20px;
     color: #482C3F;
 }
 
-main {
-    color: #E2D6C3;
-    background: linear-gradient(to bottom, #482C3F 20%, #7B5164 55% 56%, #496C82 80%, #AAB5BB 94%, #e2d6c3);
-}
-
-.intro_msg, .benefits {
-    display: inline-block;
+main{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: #E2D6C3;
+}
+
+.intro_msg, #benefits, .form_card {
+    flex: 1;
+    max-width: 500px;
     border-radius: 20px;
     margin: 10px;
     padding: 25px;
@@ -31,27 +38,78 @@ main {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-button {
-    font-size: 15px;
-    padding: 8px 16px;
-    border-radius: 25px;
-    color: black;
-    background-color: #fff8f3b6;
-    text-decoration: none;
+.form_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.benefit1_card, .benefit2_card, .benefit3_card {
+form {
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+}
+
+
+.intro_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    width: 100px;
+    margin: 5px;
+}
+
+/* cards sa benefits */
+.individual_card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 8px;
+    margin: 5px 10px;
     padding: 25px;
     border-radius: 20px;
     background-color: #482C3F;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.cards h1 {
+img {
+    margin: 10px;
+}
+
+.cards h3 {
     color:  #F5A385;
+}
+
+#join_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 601px) {
+    .intro_msg, #benefits, .form_card {
+        flex: 1;
+        max-width: 700px;
+        flex-direction: column;
+    }
+
+    .intro_buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-wrap: wrap;
+        padding: 5px 30px;
+    }
+
+    .individual_card {
+        width: 250px;
+        height: 250px;
+    }
 }
