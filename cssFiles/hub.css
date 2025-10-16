@@ -10,6 +10,7 @@ body{
 .about{
     color: #e2d6c3;
     padding: 40px;
+    margin-top: 20px;
     padding-bottom: 20px;
 }
 
@@ -55,11 +56,13 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 20px;
 }
 
 .button {
     width: 100px;
     margin: 5px;
+    padding-top: 25px;
 }
 
 /* cards sa benefits */
@@ -67,12 +70,16 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin: 5px 10px;
-    padding: 25px;
+    padding: 18px;
     border-radius: 20px;
     background-color: #482C3F;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: small;
+}
+
+.individual_card img {
+    width: 60px;
 }
 
 img {
@@ -106,10 +113,5 @@ img {
         grid-template-columns: 1fr 1fr;
         flex-wrap: wrap;
         padding: 5px 30px;
-    }
-
-    .individual_card {
-        width: 250px;
-        height: 250px;
     }
 }

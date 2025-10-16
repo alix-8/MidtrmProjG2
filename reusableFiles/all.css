@@ -12,7 +12,13 @@ body {
     background-color: #482C3F;
 }
 
-header, footer {
+.header_nav {
+    position: sticky;
+    top: 0;  
+    z-index: 1000;
+}
+
+.header_nav, footer {
     background-color: #482C3F;
     min-height: 5vh;
     align-content: center;
@@ -20,6 +26,7 @@ header, footer {
 
 .logo {
     color: #F5A385;
+    padding: 5px 10px;
 }
 
 nav {
@@ -35,4 +42,15 @@ nav a {
     align-content: center;
     color: #482C3F;
     text-decoration: none;
+}
+
+
+footer {
+    color: #faf0ea79;
+    margin-top: 10px;
+    padding: 5px 18%;
+}
+
+.footer_logo {
+    margin-bottom: 20px;
 }

@@ -3,10 +3,16 @@
     color: #E2D6C3;
 }
 
+
+.study {
+    color: #e2d6c3;
+}
+
 .about {
     color: #e2d6c3;
     padding: 40px;
     padding-bottom: 60px;
+    margin-top: 20px;
     background: linear-gradient(to bottom, #482C3F, #96747c, #E2D6C3);
 
 }

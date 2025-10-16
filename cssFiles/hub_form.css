@@ -24,15 +24,15 @@ input:focus, select:focus, textarea:focus {
 input[type="radio"]{
     width: auto;
     margin-right: 5px;
+    accent-color: #482C3F;
 }
-
-input[type="radio"] {
-  accent-color: #482C3F;
-}
-
 
 input[required]{
     border-left: 4px solid #482C3F;
+}
+
+.optional {
+    color: #917b89;
 }
 
 button {
@@ -42,12 +42,12 @@ button {
     color: #555555;
 }
 
-button[type="submit"] {
+#submit_button {
     background: #482C3F;
     color: #ffffff;
 }
 
-button[type="submit"]:hover {
+#submit_button:hover {
     background: #865b79;
     color: #ffffff;
 }
