@@ -11,7 +11,7 @@ main {
 }
 
 /* Hello, student! phrase */
-main section p {
+main section p, .about_studyspace h2  {
     display: inline-block;
     color: white;
     background-color: #F5A385;
@@ -21,25 +21,31 @@ main section p {
     font-size: 15px;
 } 
 
-/* We have spaces for */
+/* "What spaces do we offer?" and "What is StudySpace?"*/
 .introcards{
     padding-top: 20vh;
     color: #496C82;
     background-color: #e2d6c3;
     font-size: 25px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 
-.cards {
+.cards, .about_studyspace {
     flex-direction: row;
-    padding-bottom: 10vh;
     background-color: #e2d6c3;
     height: 60vh;
 }
 
+.about_studyspace {
+    flex-direction: column;
+    height: 100vh;
+}
+
 .resources_card, 
 .tools_card, 
-.hub_card {
+.hub_card,
+.about_card,
+.features p{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -104,12 +110,63 @@ img {
     width: 50px;
 }
 
+.about_studyspace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_card {
+    color:#ffffff;
+    background-color: #FAF0EA;
+    flex-direction: column;
+    border-radius: 20px;
+    max-height: fit-content;
+    margin-bottom: 10vh;
+}
+
+.about_studyspace h2 {
+    color:#FAF0EA;
+    background-color: #482C3F;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+.about_studyspace h3 {
+    color: #F5A385;
+}
+
+.about_studyspace p {
+    color: #482C3F;
+}
+
+.about_card_content {
+    display: grid;
+}
+
+.desc, .features {
+    margin: 10px;
+}
+
+.features p {
+    color: #FAF0EA;
+    background-color: #F5A385;
+    padding: 10px;
+}
+
+.desc{
+    text-align: justify;
+    padding: 0 20px 10px;
+}
+
 @media (min-width: 601px) {
 
     /* We have spaces for */
     .introcards{
         padding-top: 10vh;
+        color: #482C3F;
     }
+    
     .cards {
         display: flex;
         flex-direction: row;
@@ -131,5 +188,23 @@ img {
 
     button {
         margin-bottom: 40px;
+    }
+
+    .about_card {
+        flex: 1;
+        max-width: 950px;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .about_card_content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .desc{
+        display: flex;
+        align-items: center;
+        font-size: 18px;
     }
 }
