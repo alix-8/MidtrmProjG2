@@ -51,6 +51,16 @@ form {
   text-align: left;
 }
 
+#join_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#benefits {
+    scroll-margin-top: 100px; /* para ma center pag nag "See Benefits" */
+}
+
 
 .intro_buttons {
     display: flex;
@@ -90,10 +100,8 @@ img {
     color:  #F5A385;
 }
 
-#join_form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header_nav {
+    position: static;
 }
 
 @media (min-width: 601px) {
@@ -101,6 +109,7 @@ img {
         flex: 1;
         max-width: 700px;
         flex-direction: column;
+        margin-bottom: 40px;
     }
 
     .intro_buttons {
