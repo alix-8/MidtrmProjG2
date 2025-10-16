@@ -42,12 +42,12 @@ button {
     color: #555555;
 }
 
-button[type="submit"] {
+#submit_button {
     background: #482C3F;
     color: #ffffff;
 }
 
-button[type="submit"]:hover {
+#submit_button:hover {
     background: #865b79;
     color: #ffffff;
 }

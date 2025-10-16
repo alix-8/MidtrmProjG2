@@ -6,9 +6,10 @@
     <title>StudySpace</title>
     <link rel="stylesheet" href="cssFiles/hub.css">
     <link rel="stylesheet" href="cssFiles/hub_form.css">
+    <link rel="stylesheet" href="cssFiles/hub_submitted.css">
     <link rel="stylesheet" href="reusableFiles/all.css">
     <link rel="stylesheet" href="reusableFiles/slogan.css">
-        <link rel="stylesheet" href="reusableFiles/buttons.css">
+    <link rel="stylesheet" href="reusableFiles/buttons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -67,7 +68,7 @@
     </main>
     <section id="join_form">
         <div class="form_card">
-            <form action="./submitted.html" method="post">
+            <form>
                 <legend>
                     <p><strong>Join by filling out this form!</strong></p>
                 </legend>
@@ -124,13 +125,20 @@
                     placeholder="Tell us why you want to join..."
                 ></textarea>
                 <br/><br/>
-                <button type="submit">Register</button>
+                <button id="submit_button">Register</button>
                 <button type="reset">Clear Form</button>
             </form>
+        </div>
+
+        <div id="submitted">
+            <img class="benefits_image" src="assets/key.png" alt="Key icon" width="100px">
+            <h3 class="line1">Your request to join is successfully sent.</h3>
+            <p>We’ll let you know once your accepted. Check your email for update.</p>
         </div>
     </section>
     <footer>
 
     </footer>
 </body>
+<script src="jsFiles/hub.js"></script>
 </html>

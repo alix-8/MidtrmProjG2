@@ -1,0 +1,24 @@
+#submitted {
+    flex: 1;
+    max-width: 500px;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 25px;
+    color: #ffffff;
+    background-color: #E2D6C380;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-height: 300px;
+    margin-bottom: 60px;
+
+    /*magiging visible uli after iclick yung submit button*/
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#submitted h3, 
+#submitted p {
+    color: #482C3F;
+}
