@@ -31,7 +31,6 @@ body {
 
 nav {
     background-color: #FAF0EA;
-
     min-height: 6vh;
     align-content: center;
     display: flex;
@@ -47,9 +46,9 @@ nav a {
 
 
 footer {
-    color: #FAF0EA;
+    color: #faf0ea79;
     margin-top: 10px;
-    padding: 5px 10px;
+    padding: 5px 280px;
 }
 
 .footer_logo {
