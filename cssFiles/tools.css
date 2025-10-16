@@ -20,7 +20,7 @@
 .cards {
     display: flex;
     flex-direction: column;
-    padding-bottom: 20vh;
+    min-height: 40vh;
     background-color: #e2d6c3;
 }
 

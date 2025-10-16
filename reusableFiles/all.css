@@ -54,3 +54,7 @@ footer {
 .footer_logo {
     margin-bottom: 20px;
 }
+
+li {
+    padding: 8px;
+}
