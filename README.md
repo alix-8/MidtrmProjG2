@@ -11,6 +11,35 @@ Bon, Alexandrian O. <br>
 Carbonel, Jess Marvin
 <br><br>
 
+# Design
+Bon, Alexandrian
+<br><br>
+
+# Researchers
+Carbonel, Jess Marvin <br>
+Ariate, Angelene
+<br><br>
+
+# HTML
+Bautista, Russell Jonn <br>
+Bon, Alexandrian <br>
+Carbonel, Jess Marvin
+<br><br>
+
+# CSS
+Baustita, Russell Jonn <br>
+Bon, Alexandrian
+<br><br>
+
+# JavaScript & Interactivity
+Bautista, Russell Jonn <br>
+Bon, Alexandrian 
+<br><br>
+
+# Project Version Manager
+Carbonel, Jess Marvin
+<br><br>
+
 # Features:
 Mobile-Friendly<br>
 Offers compilation of study links and tools<br>
