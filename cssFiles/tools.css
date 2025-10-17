@@ -19,8 +19,7 @@ body {
     padding: 40px;
     padding-bottom: 60px;
     margin-top: 20px;
-    background: linear-gradient(to bottom, #482C3F, #96747c, #E2D6C3);
-
+    background: linear-gradient(to bottom, #482C3F, #96747c 60%, #E2D6C3);
 }
 
 .cards,
