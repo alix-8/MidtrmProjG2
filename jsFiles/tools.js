@@ -1,18 +1,15 @@
-const cardHeaders = document.querySelectorAll('.ides_card_header, .design_card_header, .icons_card_header');
-
-cardHeaders.forEach(header => {
-  const cardBody = header.nextElementSibling;
-  const icon = header.querySelector('img');
-  icon.style.transform = 'rotate(180deg)';
+document.querySelectorAll('.cards > div').forEach(card => {
+  const header = card.querySelector('[class$="_card_header"]')
+  const icon = header.querySelector('img')
   
-  header.addEventListener('click', () => {
-    cardBody.classList.toggle('active');
+  icon.style.transform = 'rotate(180deg)';
 
-    // Rotate dropdown arrow
-    if (cardBody.classList.contains('active')) {
+  header.addEventListener('click', () => {
+    card.classList.toggle('active')
+    if (card.classList.contains('active')) {
       icon.style.transform = 'rotate(0deg)';
     } else {
       icon.style.transform = 'rotate(180deg)';
     }
-  });
-});
+  })
+})
