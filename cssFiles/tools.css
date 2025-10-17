@@ -44,7 +44,8 @@ li:hover {
 }
 
 
-.card_title {
+.card_title,
+.card_title2 {
     color:#7b5163;
     background-color: #E2D6C3;
     font-size: 25px;
@@ -200,6 +201,12 @@ li:hover {
 @media (min-width: 687px) {
     .card_title {
         padding-top: 0;
+    }
+
+    .card_title2 {
+        padding-top: 0;
+        padding-bottom: 40px;
+        color:#7b5163c0;
     }
 
     .cards,
