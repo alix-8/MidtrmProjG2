@@ -12,7 +12,9 @@ Carbonel, Jess Marvin
 <br><br>
 
 # Features:
-alshjfajfhadkfjhjkfh
+Mobile-Friendly<br>
+Offers compilation of study links and tools<br>
+Introduces a community for web dev learners
 <br><br>
 
 # Website:
