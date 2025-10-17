@@ -3,7 +3,8 @@ body {
     color: #FAF0EA;
 }
 
-.nav_resources {
+.nav_resources,
+.nav_resources:hover {
     background-color: #482C3F;
     color: #E2D6C3;
 }

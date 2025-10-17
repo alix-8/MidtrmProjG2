@@ -1,4 +1,5 @@
-.nav_home {
+.nav_home,
+.nav_home:hover {
     background-color: #482C3F;
     color: #E2D6C3;
 }
@@ -23,6 +24,7 @@ main section p, .about_studyspace h2  {
 
 /* "What spaces do we offer?" and "What is StudySpace?"*/
 .introcards{
+    padding-top: 20vh;
     color: #496C82;
     background-color: #e2d6c3;
     font-size: 25px;
@@ -32,7 +34,7 @@ main section p, .about_studyspace h2  {
 .cards, .about_studyspace {
     flex-direction: row;
     background-color: #e2d6c3;
-    height: 70vh;
+    height: 60vh;
 }
 
 .about_studyspace {
@@ -148,9 +150,10 @@ img {
 }
 
 .features p {
-    color: #FAF0EA;
+    color: #ffffff;
     background-color: #F5A385;
     padding: 10px;
+    font-weight: bold;
 }
 
 .desc{

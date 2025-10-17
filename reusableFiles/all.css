@@ -44,6 +44,12 @@ nav a {
     text-decoration: none;
 }
 
+.nav_home:hover,
+.nav_resources:hover,
+.nav_tools:hover,
+.nav_hub:hover {
+    background-color: #ffdfcb;
+}
 
 footer {
     color: #faf0ea79;

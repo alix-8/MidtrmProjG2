@@ -1,4 +1,5 @@
-.nav_hub {
+.nav_hub,
+.nav_hub:hover {
     background-color: #482C3F;
     color: #E2D6C3;
 }
