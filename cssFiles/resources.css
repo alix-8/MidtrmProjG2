@@ -91,7 +91,7 @@ li:hover {
 .html_card_header div,
 .css_card_header div,
 .js_card_header div,
-.vid_card_header div {
+.vid_card_header_content {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -149,6 +149,10 @@ li:hover {
     background-color: #f7f7f7;
 }
 
+#vid_cards {
+    padding-bottom: 60px;
+}
+
 .vid_card {
     background-color: #496C82;
     padding: 16px 0;
@@ -170,9 +174,9 @@ li:hover {
     background-color:#2e4a5b;
 }
 
-iframe {
+.vid_card iframe {
     pointer-events: none;
-    width: 80%;
+    width: 90%;
     height: 200px;
 }
 
