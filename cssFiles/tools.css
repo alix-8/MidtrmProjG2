@@ -35,9 +35,17 @@ li:hover {
     background-color: #7b5163;
 }
 
+
+.card_title {
+    color:#7b5163;
+    background-color: #E2D6C3;
+    font-size: 25px;
+}
+
 .ides_card,
 .design_card,
-.icons_card {
+.icons_card,
+.vid_card1 {
     align-items: center;
     justify-content: center;
     margin: 10px;
@@ -48,7 +56,8 @@ li:hover {
 
 .ides_card:hover,
 .design_card:hover,
-.icons_card:hover {
+.icons_card:hover,
+.vid_card1:hover {
     transform: translateY(-5px);
     transition: all 0.3s ease;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
@@ -56,7 +65,8 @@ li:hover {
 
 .ides_card_header,
 .design_card_header,
-.icons_card_header {
+.icons_card_header,
+.vid_card1 {
     display: flex;
     flex-direction: row;
     padding: 16px;
@@ -65,25 +75,52 @@ li:hover {
     background-color: #7b5163;
 }
 
+
+.vid_card1 {
+    flex-direction: column;
+    margin-bottom: 5vh;
+}
+
 .ides_card_header div,
 .design_card_header div,
-.icons_card_header div {
+.icons_card_header div,
+.vid_card1_content  {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     text-align: start;
 }
 
+.vid_card1_content {
+    flex-direction: row;
+}
+
+.vid_card1_desc {
+    margin: 10px 212px 0 0;
+}
+
+.vid_card_buttons img{
+    padding: 8px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.vid_card_buttons img:hover {
+    background-color:#2e4a5b;
+}
+
 .ides_card_header div h1,
 .design_card_header div h1,
-.icons_card_header div h1 {
+.icons_card_header div h1,
+.vid_card1 div h1  {
     color: #FAF0EA;
     font-size: 25px;
 }
 
 .ides_card_header div p,
 .design_card_header div p,
-.icons_card_header div p {
+.icons_card_header div p,
+.vid_card1 div p  {
     color: #e2d6c3;
 }
 
@@ -124,6 +161,12 @@ li:hover {
     background-color: #ffffff;
 }
 
+
+iframe {
+    pointer-events: none;
+}
+
+
 @media (min-width: 601px) {
 
     .cards {
@@ -131,14 +174,29 @@ li:hover {
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
+        max-height: fit-content;
         gap: 10px;
     }
 
     .ides_card,
     .design_card,
-    .icons_card {
+    .icons_card,
+    .vid_card1 {
         flex: 1;
         max-width: 300px;
         flex-direction: column;
+    }
+
+    
+    .vid_card1_content {
+        flex-direction: row;
+    }
+
+    .vid_card1_desc {
+        margin: 10px 50px 0 0;
+    }
+
+    iframe {
+        max-width: fit-content;
     }
 }
