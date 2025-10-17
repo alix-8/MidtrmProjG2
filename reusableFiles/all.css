@@ -55,6 +55,38 @@ footer {
     margin-bottom: 20px;
 }
 
+.footer_nav a {
+    flex-grow: 1;
+    align-content: center;
+    color:#faf0ea79;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.footer_nav a:hover {
+    color:#faf0ea;
+    text-decoration: underline;
+}
+
+.footer_nav {
+    margin-bottom: 20px;
+}
+
 li {
     padding: 8px;
 }
+
+.member {
+  transition: color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.member:hover {
+  color:#F5A385;
+  transform: scale(1.05);
+}
+
+.copyright {
+    margin-top: 10px;
+}
+
