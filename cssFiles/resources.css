@@ -35,18 +35,9 @@ a {
     text-decoration: none;
     color: #FAF0EA;
 }
-a {
-    margin-left: 5px;
-    text-decoration: none;
-    color: #FAF0EA;
-}
 
 li:hover {
     border-radius: 5px;
-    background-color: #7b5163;
-}
-
-li:hover {
     background-color: #496C82;
 }
 
@@ -91,7 +82,7 @@ li:hover {
 .html_card_header div,
 .css_card_header div,
 .js_card_header div,
-.vid_card_header div {
+.vid_card_header_content {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -149,16 +140,24 @@ li:hover {
     background-color: #f7f7f7;
 }
 
+#vid_cards {
+    padding-bottom: 60px;
+}
+
 .vid_card {
     background-color: #496C82;
-    padding: 16px 0;
-    padding-top: 32px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
 }
 
 .vid_card_header {
     display: flex;
     flex-direction: row;
-    padding: 16px;
+    padding: 8px;
+    flex-grow: 1;
+    width: 90%;
 }
 
 .vid_card_button img {
@@ -170,13 +169,21 @@ li:hover {
     background-color:#2e4a5b;
 }
 
-iframe {
-    pointer-events: none;
-    width: 80%;
-    height: 200px;
+.vid_card_image {
+    width: 25%;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    display: none;
 }
 
-@media (min-width: 601px) {
+@media (min-width: 426px) {
+    .vid_card_image {
+        display: block;
+    }
+}
+
+@media (min-width: 687px) {
     .card_title {
         padding-top: 0;
     }
@@ -196,5 +203,16 @@ iframe {
         flex: 1;
         max-width: 300px;
         flex-direction: column;
+    }
+
+    .vid_card {
+        padding: 16px 0;
+        padding-top: 32px;
+        min-height: 385px;
+    }
+
+    .vid_card_image {
+        width: 90%;
+        height: 200px;
     }
 }
