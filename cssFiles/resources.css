@@ -35,18 +35,9 @@ a {
     text-decoration: none;
     color: #FAF0EA;
 }
-a {
-    margin-left: 5px;
-    text-decoration: none;
-    color: #FAF0EA;
-}
 
 li:hover {
     border-radius: 5px;
-    background-color: #7b5163;
-}
-
-li:hover {
     background-color: #496C82;
 }
 
