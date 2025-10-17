@@ -53,7 +53,7 @@ li:hover {
 .ides_card,
 .design_card,
 .icons_card,
-.vid_card {
+.web_card {
     align-items: center;
     justify-content: center;
     margin: 10px;
@@ -65,7 +65,7 @@ li:hover {
 .ides_card:hover,
 .design_card:hover,
 .icons_card:hover,
-.vid_card:hover {
+.web_card:hover {
     transform: translateY(-5px);
     transition: all 0.3s ease;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
@@ -85,7 +85,7 @@ li:hover {
 .ides_card_header div,
 .design_card_header div,
 .icons_card_header div,
-.vid_card_header_content  {
+.web_card_header_content  {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -102,7 +102,7 @@ li:hover {
 .ides_card_header div p,
 .design_card_header div p,
 .icons_card_header div p,
-.vid_card_header_content p  {
+.web_card_header_content p  {
     color: #e2d6c3;
 }
 
@@ -143,32 +143,32 @@ li:hover {
     background-color: #ffffff;
 }   
 
-#vid_cards {
+#web_cards {
     padding-bottom: 60px;
 }
 
-.vid_card {
+.web_card {
     background-color: #7b5163;
     padding: 16px 0;
     padding-top: 32px;
 }
 
-.vid_card_header {
+.web_card_header {
     display: flex;
     flex-direction: row;
     padding: 16px;
 }
 
-.vid_card_button img {
+.web_card_button img {
     padding: 8px;
     border-radius: 25px;
 }
 
-.vid_card_button img:hover {
+.web_card_button img:hover {
     background-color:#2e4a5b;
 }
 
-.vid_card iframe {
+.web_card iframe {
     pointer-events: none;
     width: 90%;
     height: 200px;
@@ -190,7 +190,7 @@ li:hover {
     .ides_card,
     .design_card,
     .icons_card,
-    .vid_card {
+    .web_card {
         flex: 1;
         max-width: 300px;
         flex-direction: column;
