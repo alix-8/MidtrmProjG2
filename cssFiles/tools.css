@@ -149,15 +149,18 @@ li:hover {
 
 .web_card {
     background-color: #7b5163;
-    padding: 16px 0;
-    padding-top: 32px;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
     overflow: hidden;
 }
 
 .web_card_header {
     display: flex;
     flex-direction: row;
-    padding: 16px;
+    padding: 8px;
+    flex-grow: 1;
+    width: 90%;
 }
 
 .web_card_button img {
@@ -170,10 +173,21 @@ li:hover {
 }
 
 .web_card_image {
-    width: 90%;
-    height: 200px;
+    width: 25%;
+    height: 100px;
     object-fit: cover;
     object-position: left;
+    display: none;
+}
+
+.web_card_header_content {
+    justify-content: center;
+}
+
+@media (min-width: 426px) {
+    .web_card_image {
+        display: block;
+    }
 }
 
 @media (min-width: 687px) {
@@ -196,5 +210,17 @@ li:hover {
         flex: 1;
         max-width: 300px;
         flex-direction: column;
+    }
+
+    .web_card {
+        padding: 16px 0;
+        padding-top: 32px;
+    }
+
+    .web_card_image {
+        width: 90%;
+        height: 200px;
+        object-fit: cover;
+        object-position: left;
     }
 }

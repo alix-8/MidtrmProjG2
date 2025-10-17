@@ -146,14 +146,18 @@ li:hover {
 
 .vid_card {
     background-color: #496C82;
-    padding: 16px 0;
-    padding-top: 32px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
 }
 
 .vid_card_header {
     display: flex;
     flex-direction: row;
-    padding: 16px;
+    padding: 8px;
+    flex-grow: 1;
+    width: 90%;
 }
 
 .vid_card_button img {
@@ -166,10 +170,17 @@ li:hover {
 }
 
 .vid_card_image {
-    width: 90%;
-    height: 200px;
+    width: 25%;
+    height: 100px;
     object-fit: cover;
-    object-position: left;
+    object-position: center;
+    display: none;
+}
+
+@media (min-width: 426px) {
+    .vid_card_image {
+        display: block;
+    }
 }
 
 @media (min-width: 687px) {
@@ -192,5 +203,15 @@ li:hover {
         flex: 1;
         max-width: 300px;
         flex-direction: column;
+    }
+
+    .vid_card {
+        padding: 16px 0;
+        padding-top: 32px;
+    }
+
+    .vid_card_image {
+        width: 90%;
+        height: 200px;
     }
 }
