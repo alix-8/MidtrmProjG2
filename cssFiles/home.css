@@ -24,7 +24,6 @@ main section p, .about_studyspace h2  {
 
 /* "What spaces do we offer?" and "What is StudySpace?"*/
 .introcards{
-    padding-top: 20vh;
     color: #496C82;
     background-color: #e2d6c3;
     font-size: 25px;
@@ -34,12 +33,14 @@ main section p, .about_studyspace h2  {
 .cards, .about_studyspace {
     flex-direction: row;
     background-color: #e2d6c3;
-    height: 60vh;
 }
 
 .about_studyspace {
     flex-direction: column;
-    height: 100vh;
+}
+
+.about_studyspace {
+    padding: 10vh 0;
 }
 
 .resources_card, 
