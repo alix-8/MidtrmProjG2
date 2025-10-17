@@ -46,8 +46,7 @@ Offers compilation of study links and tools<br>
 Introduces a community for web dev learners
 <br><br>
 
-# Website:
-
+# Instruction to run:
 
 ## [view website (IMOitself)](https://imoitself.github.io/MidtrmProjG2/home.html)
 
