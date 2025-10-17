@@ -165,10 +165,11 @@ li:hover {
     background-color:#2e4a5b;
 }
 
-.vid_card iframe {
-    pointer-events: none;
+.vid_card_image {
     width: 90%;
     height: 200px;
+    object-fit: cover;
+    object-position: left;
 }
 
 @media (min-width: 601px) {
