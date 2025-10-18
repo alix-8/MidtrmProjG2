@@ -1,23 +1,23 @@
-.nav_hub {
+.nav_hub,
+.nav_hub:hover {
     background-color: #482C3F;
     color: #E2D6C3;
 }
 
 body{
-       background: linear-gradient(to bottom, #482C3F 20%, #7B5164 55% 56%, #496C82 80%, #AAB5BB 94%, #e2d6c3);
+    background: linear-gradient(to bottom, #482C3F 10%, #7B5164 35% 36%, #496C82 60%, #AAB5BB 94%, #e2d6c3);
 }
 
 .about{
     color: #e2d6c3;
-    padding: 40px;
     margin-top: 20px;
     padding-bottom: 20px;
 }
 
-.line1, legend {
+.line1 {
     margin-top: 5px;
-    font-size: 20px;
     color: #482C3F;
+    margin-bottom: 10px;
 }
 
 main{
@@ -28,6 +28,14 @@ main{
     color: #E2D6C3;
 }
 
+.intro_msg .line1 {
+    color:#ffffff;
+}
+
+.intro_msg p {
+    color:#482C3F;
+}
+
 .intro_msg, #benefits, .form_card {
     flex: 1;
     max-width: 500px;
@@ -35,7 +43,7 @@ main{
     margin: 10px;
     padding: 25px;
     color:#ffffff;
-    background-color: #E2D6C380;
+    background-color: #ffffff6d;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -43,12 +51,14 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 form {
   width: 100%;
   max-width: 400px;
   text-align: left;
+  font-size: larger;
 }
 
 #join_form {
@@ -57,16 +67,19 @@ form {
     align-items: center;
 }
 
+input[type="text"],
+input[type="email"] {
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
 #benefits {
     scroll-margin-top: 100px; /* para ma center pag nag "See Benefits" */
 }
 
 
 .intro_buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    padding: 16px;
 }
 
 .button {
@@ -109,11 +122,6 @@ img {
         max-width: 700px;
         flex-direction: column;
         margin-bottom: 40px;
-    }
-
-    .intro_buttons {
-        flex-direction: row;
-        justify-content: center;
     }
 
     .cards {

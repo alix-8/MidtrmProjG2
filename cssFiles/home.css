@@ -1,4 +1,5 @@
-.nav_home {
+.nav_home,
+.nav_home:hover {
     background-color: #482C3F;
     color: #E2D6C3;
 }
@@ -7,7 +8,7 @@ main {
     align-content: center;
     height: 80vh;
     color: #E2D6C3;
-    background: linear-gradient(to bottom, #482C3F 20%, #7B5164 55% 56%, #496C82 80%, #AAB5BB 94%, #e2d6c3);
+    background: linear-gradient(to bottom, #482C3F 20%, #7B5164 55% 56%, #698cb1 80%, #e2d6c3);
 }
 
 /* Hello, student! phrase */
@@ -32,12 +33,14 @@ main section p, .about_studyspace h2  {
 .cards, .about_studyspace {
     flex-direction: row;
     background-color: #e2d6c3;
-    height: 70vh;
 }
 
 .about_studyspace {
     flex-direction: column;
-    height: 100vh;
+}
+
+.about_studyspace {
+    padding: 10vh 0;
 }
 
 .resources_card, 
@@ -148,9 +151,10 @@ img {
 }
 
 .features p {
-    color: #FAF0EA;
+    color: #ffffff;
     background-color: #F5A385;
     padding: 10px;
+    font-weight: bold;
 }
 
 .desc{
